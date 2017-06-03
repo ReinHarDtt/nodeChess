@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+body{
+	font-family: "STKaiti",Geneva;
+	color: #363131;
+}
+.gameName{
+	margin-top: 100px;
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing:20px;
+}
+form{
+	margin-top: 170px;
+}
+label{
+	font-weight: 600;
+}
+input{
+	margin-top: 30px;
+	height: 24px;
+	border: 1px solid #363131;
+}
+input[name="login"]{
+	width: 120px;
+	cursor: pointer;
+}
+.noName{
+	position: absolute;
+	top: 408px;
+	left: 781px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.noPassword{
+	position: absolute;
+	top: 464px;
+	left: 781px;
+	font-size: 14px;
+	font-weight: 600;
+}

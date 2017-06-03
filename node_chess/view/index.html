@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国联网象棋</title>
+<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+<script type="text/javascript" src="../static/js/jquery-1.4a2.min.js"> </script>
+<script type="text/javascript" src="../static/js/socket.io.js"></script>
+<script type="text/javascript" src="../static/js/chess.js"> </script>
+<script>
+$(function(){
+	
+	
+	var happy=new Chess();
+	// socket.on('start',function(data){
+		happy.start();
+	// })
+
+})
+
+
+
+</script>
+</head>
+<body background="../static/img/xqbg.jpg">
+<div class="player">
+	<div>你是: <span class="you"></span></div>
+	<div>下一步: <span class="next">红方</span></div>
+</div>
+<div id="board" style="background:url(../static/img/board.jpg) no-repeat; width:452px;height:501px;position:absolute;left:50%;margin-left: -226px;" >
+
+<div id="a1" type="Char" style="background:url(../static/img/xqinew2.gif) 0px 43px; left:21px; top:10px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a2" type="Char" style="background:url(../static/img/xqinew2.gif) -43px 43px; left:64px; top:10px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a3" type="Char" style="background:url(../static/img/xqinew2.gif) -215px 43px; left:112px; top:11px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a4" type="Char" style="background:url(../static/img/xqinew2.gif) -172px 43px; left:159px; top:12px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a5" type="Char" style="background:url(../static/img/xqinew2.gif) -129px 43px; left:205px; top:13px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a6" type="Char" style="background:url(../static/img/xqinew2.gif) -172px 43px; left:254px; top:12px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a7" type="Char" style="background:url(../static/img/xqinew2.gif) -215px 43px; left:304px; top:14px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a8" type="Char" style="background:url(../static/img/xqinew2.gif) -43px 43px; left:349px; top:13px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a9" type="Char" style="background:url(../static/img/xqinew2.gif) -0px 43px; left:393px; top:12px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a10" type="Char" style="background:url(../static/img/xqinew2.gif) -86px 43px; left:62px; top:105px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a11" type="Char" style="background:url(../static/img/xqinew2.gif) -86px 43px; left:346px; top:108px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<!-- 1-->
+<div id="a13" type="Char" style="background:url(../static/img/xqinew2.gif) -258px 43px; left:17px; top:156px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a14" type="Char" style="background:url(../static/img/xqinew2.gif) -258px 43px; left:395px; top:153px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a15" type="Char" style="background:url(../static/img/xqinew2.gif) -258px 43px; left:300px; top:152px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a16"  type="Char" style="background:url(../static/img/xqinew2.gif) -258px 43px; left:201px; top:152px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="a12" type="Char"  style="background:url(../static/img/xqinew2.gif) -258px 43px; left:108px; top:152px; width:43px; height:43px; position:absolute; z-index:100"></div>
+
+
+<div id="b1" type="Char" style="background:url(../static/img/xqinew2.gif) -301px 43px; left:11px; top:443px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b2" type="Char" style="background:url(../static/img/xqinew2.gif) -344px 43px; left:64px; top:444px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b3" type="Char" style="background:url(../static/img/xqinew2.gif) -516px 43px; left:109px; top:446px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b4" type="Char" style="background:url(../static/img/xqinew2.gif) -473px 43px; left:158px; top:445px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b5" type="Char" style="background:url(../static/img/xqinew2.gif) -430px 43px; left:202px; top:444px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b6" type="Char" style="background:url(../static/img/xqinew2.gif) -473px 43px; left:251px; top:444px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b7" type="Char" style="background:url(../static/img/xqinew2.gif) -516px 43px; left:297px; top:445px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b8" type="Char" style="background:url(../static/img/xqinew2.gif) -344px 43px; left:346px; top:443px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b9" type="Char" style="background:url(../static/img/xqinew2.gif) -301px 43px; left:394px; top:443px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b10" type="Char" style="background:url(../static/img/xqinew2.gif) -387px 43px; left:62px; top:349px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b11" type="Char" style="background:url(../static/img/xqinew2.gif) -387px 43px; left:348px; top:349px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<!-- 1-->
+<div id="b13" type="Char" style="background:url(../static/img/xqinew2.gif) -559px 43px; left:16px; top:299px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b14" type="Char" style="background:url(../static/img/xqinew2.gif) -559px 43px; left:390px; top:294px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b15" type="Char" style="background:url(../static/img/xqinew2.gif) -559px 43px; left:300px; top:297px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b16" type="Char" style="background:url(../static/img/xqinew2.gif) -559px 43px; left:202px; top:298px; width:43px; height:43px; position:absolute; z-index:100"></div>
+<div id="b12" type="Char" style="background:url(../static/img/xqinew2.gif) -559px 43px; left:108px; top:296px; width:43px; height:43px; position:absolute; z-index:100"></div>
+
+
+
+<div id="indacatorsrc" style="background:url(../static/img/focus.gif) -0px 0px; left:202px; top:443px; width:43px; height:43px; position:absolute;"> </div>
+<div id="indacatordir" style="background:url(../static/img/focus.gif) -0px 0px;  left:80px; top:229px; width:43px; height:43px; position:absolute;display:none"> </div>
+
+<div id="button_begin" style="background:url(../static/img/button_begin.gif) -0px 0px;  left:48px; top:509px; width:54px; height:36px; position:absolute;"> </div>
+<div id="button_regret" style="background:url(../static/img/button_regret.gif) -0px 0px;  left:112px; top:512px; width:51px; height:32px; position:absolute;"> </div>
+
+
+
+</div>
+<div id="xqbg1" style="background:url(../static/img/xqbg1.jpg) -0px 0px;  left:1px; top:475px; width:388px; height:228px; position:absolute; z-index:-5"> </div>
+<div id="test" style="position:absolute;top:600px;left:1px;display:none">
+
+
+
+</div>
+<div class="begin" style="width: 170px; height: 100px; position: absolute; left: 1036px; top: 55px; border: 1px solid #666; text-align: center; background-color: #ebd6b1;display: none;">
+	<p style="margin-top: 20px;">是否重新开始游戏？</p>
+	<div class="NO" style="width: 35px; height: 27px;float: left; cursor: pointer; background-color: #adadad; line-height: 27px; margin-left: 25px; margin-right: 25px; border-radius: 8px;">否</div>
+	<div class="YES" style="width: 35px; height: 27px;float: left; cursor: pointer; background-color: #adadad; line-height: 27px; margin-left: 25px; border-radius: 8px;">是</div>
+</div>
+<div class="regret" style="width: 170px; height: 100px; position: absolute; left: 1036px; top: 55px; border: 1px solid #666; text-align: center; background-color: #ebd6b1; display: none;">
+	<p style="margin-top: 20px;">是否同意对方悔棋？</p>
+	<div class="NO" style="width: 35px; height: 27px;float: left; cursor: pointer; background-color: #adadad; line-height: 27px; margin-left: 25px; margin-right: 25px; border-radius: 8px;">否</div>
+	<div class="YES" style="width: 35px; height: 27px;float: left; cursor: pointer; background-color: #adadad; line-height: 27px; margin-left: 25px; border-radius: 8px;">是</div>
+</div>
+<div class="noBegin" style="width: 300px; position: absolute; left: 1036px; top: 55px;  font-size: 18px; font-weight: 600; display: none;">对方不同意重新开始游戏！</div>
+<div class="noRegret" style="width: 300px; position: absolute; left: 1036px; top: 55px;  font-size: 18px; font-weight: 600; display: none;">对方不同意悔棋！</div>
+</body>
+</html>

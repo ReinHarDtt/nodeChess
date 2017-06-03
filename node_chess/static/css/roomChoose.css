@@ -1,0 +1,47 @@
+body,div,form,input,a{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "STKaiti",Geneva;
+	color: #363131;
+}
+.roomList{
+	width: 88%;
+	padding-top: 30px;
+	text-align: left;
+}
+.createRoom{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #363131;
+	border-radius: 6px;
+	background: #cecece;
+	cursor: pointer;
+	position: absolute;
+	top: 600px;
+	left: 50%;
+	margin-left: -40px;
+}
+.user{
+	float: right;
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 600;
+}
+.roomButtonStyle{
+	display: inline-block;
+	width: 60px;
+	height: 28px;
+	margin: 0 15px;
+	line-height: 28px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #363131;
+	border-radius: 6px;
+	background: #cecece;
+	color: #363131;
+}
